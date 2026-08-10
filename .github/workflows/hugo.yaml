@@ -24,7 +24,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     env:
-      HUGO_VERSION: 0.128.0 # to support `hugo mod`
+      HUGO_VERSION: 0.160.0 # to support `hugo mod` and compatible with the theme
     steps:
       - name: Install Hugo CLI
         run: |
