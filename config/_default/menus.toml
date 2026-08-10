@@ -1,0 +1,4 @@
+[[main]]
+name = 'Articles'
+url = '/articles/'
+weight = 20
