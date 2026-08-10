@@ -38,8 +38,8 @@ jobs:
         run: hugo mod get -u ./...
       - name: Set Pages
         id: pages
-        uses: actions/configure-pages@v3
-      - name: Build via Hugo
+        uses: actions/configure-pages@v5
+      - name: Build with Hugo
         env:
           # for backward compatibility
           HUGO_ENVIRONMENT: production
@@ -63,4 +63,4 @@ jobs:
     steps:
       - name: Deploy to Github Pages
         id: deployment
-        uses: actions/deploy-pages@v2
+        uses: actions/deploy-pages@v5
