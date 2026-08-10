@@ -35,7 +35,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
       - name: Fetch Hugo modules
-        run: hugo mod get -u ./...
+        run: hugo mod get -u ./... && hugo mod tidy
       - name: Set Pages
         id: pages
         uses: actions/configure-pages@v5
